@@ -9,13 +9,13 @@ setTimeout(() => {
   for (let div of divElements) {
     const span = div.querySelector("span");
     if (span && span.textContent.trim() === targetText) {
-      targetDiv = div; //who to followの文言を含むspan要素を格納(基準となるdiv要素)
+      targetDiv = div; //who to followの文言を含むdiv要素を格納(基準となるdiv要素)
       break;
     }
   }
 
   if (targetDiv) {
-    // 親要素を取得
+    
     const parentDiv = targetDiv.closest("div[data-testid='cellInnerDiv']");
 
     // parentDivと連続する4つの後続するdiv要素を非表示
