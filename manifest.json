@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Hide Who-to-follow",
+  "version": "1.0",
+  "description": "Hide 'Who-to-follow section(Account recommend section)' at Timeline in X(Twitter)",
+  "permissions": ["scripting"],
+  "host_permissions": ["https://x.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "./images/icon_48.png",
+    "128": "./images/icon_128.png"
+  }
+}
