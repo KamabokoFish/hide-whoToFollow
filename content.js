@@ -33,4 +33,4 @@ setTimeout(() => {
       nextSibling = nextSibling.nextElementSibling;
     }
   }
-}, 1600);
+}, 1750);

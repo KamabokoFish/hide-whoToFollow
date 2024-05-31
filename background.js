@@ -6,8 +6,6 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
         target: { tabId: tab.id },
         files: ["./content.js"],
       })
-      .then(() => console.log("script injected"));
-  }else{
-    console.log('out of scope')
+      // .then(() => console.log("script injected"));
   }
 });
