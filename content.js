@@ -18,11 +18,13 @@ setTimeout(() => {
     // 親要素を取得
     const parentDiv = targetDiv.closest("div[data-testid='cellInnerDiv']");
 
-    // parentDivから連続する3つの後続するdiv要素を非表示
+    // parentDivと連続する4つの後続するdiv要素を非表示
+    parentDiv.style.display = "none";
+
     let count = 0;
     let nextSibling = parentDiv.nextElementSibling;
 
-    while (nextSibling && count < 3) {
+    while (nextSibling && count < 4) {
       if (nextSibling.tagName === "DIV") {
         // nextSibling.classList.add("hide-recommend");
         nextSibling.style.display = "none";
@@ -31,4 +33,4 @@ setTimeout(() => {
       nextSibling = nextSibling.nextElementSibling;
     }
   }
-}, 1700);
+}, 1600);
